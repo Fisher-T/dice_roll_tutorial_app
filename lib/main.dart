@@ -1,29 +1,17 @@
+import 'package:dice_roll_tutorial_app/gradient_container.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Colors.deepPurple,
-                Colors.black12,
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: const Center(
-            child: Text(
-              'Hello World!',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 28,
-              ),
-            ),
-          ),
+        body: GradientContainer(
+          colors: [
+            Color.fromARGB(255, 1, 74, 67),
+            Color.fromARGB(255, 0, 150, 135),
+            Color.fromARGB(255, 1, 74, 67),
+          ],
+          text: 'hello world',
         ),
       ),
     ),
