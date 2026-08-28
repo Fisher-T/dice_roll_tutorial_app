@@ -1,6 +1,6 @@
 # dice_roll_tutorial_app
 
-A new Flutter project.
+Flutter App practice creating a app to generate and roll a dice with random images
 
 ## Getting Started
 
